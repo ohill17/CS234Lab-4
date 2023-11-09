@@ -3,7 +3,8 @@ using System.Linq;
 using System;
 
 using NUnit.Framework;
-using MMABooksEFClasses.MarisModels;
+using MMABooksEFClasses.MODELS;
+//using MMABooksEFClasses.MarisModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace MMABooksTests
@@ -11,15 +12,15 @@ namespace MMABooksTests
     [TestFixture]
     public class CustomerTests
     {
-        /*
-        MMABooksContext dbContext;
+        
+        MMABOOKSCONTEXT dbContext;
         Customer? c;
         List<Customer>? customers;
 
         [SetUp]
         public void Setup()
         {
-            dbContext = new MMABooksContext();
+            dbContext = new MMABOOKSCONTEXT();
             dbContext.Database.ExecuteSqlRaw("call usp_testingResetData()");
         }
 
@@ -87,6 +88,6 @@ namespace MMABooksTests
                 Console.WriteLine(c);
             }
         }
-        */
+        
     }
 }

@@ -3,7 +3,7 @@ using System.Linq;
 using System;
 
 using NUnit.Framework;
-using MMABooksEFClasses.MarisModels;
+using MMABooksEFClasses.MODELS;
 using Microsoft.EntityFrameworkCore;
 
 namespace MMABooksTests
@@ -13,22 +13,22 @@ namespace MMABooksTests
     {
         // ignore this warning about making dbContext nullable.
         // if you add the ?, you'll get a warning wherever you use dbContext
-        MMABooksContext dbContext;
+        MMABOOKSCONTEXT dbContext;
         State? s;
         List<State>? states;
 
         [SetUp]
         public void Setup()
         {
-            dbContext = new MMABooksContext();
-            dbContext.Database.ExecuteSqlRaw("call usp_testingResetData()");
+            dbContext = new MMABOOKSCONTEXT();
+           dbContext.Database.ExecuteSqlRaw("call usp_testingResetStateData()");
         }
 
         [Test]
         public void GetAllTest()
         {
             states = dbContext.States.OrderBy(s => s.StateName).ToList();
-            Assert.AreEqual(52, states.Count);
+            Assert.AreEqual(53, states.Count);
             Assert.AreEqual("Alabama", states[0].StateName);
             PrintAll(states);
         }
