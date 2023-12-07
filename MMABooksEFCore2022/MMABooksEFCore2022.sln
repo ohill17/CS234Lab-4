@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MMABooksEFClasses", "MMABoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMABooksTests", "MMABooksTests\MMABooksTests.csproj", "{6A92E190-D27A-41AA-903F-7154C9AD6A57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMABitsRestfulApi", "MMABitsRestfulApi\MMABitsRestfulApi.csproj", "{A048023B-1BEB-4032-A5C9-5338DDD6CF18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6A92E190-D27A-41AA-903F-7154C9AD6A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A92E190-D27A-41AA-903F-7154C9AD6A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A92E190-D27A-41AA-903F-7154C9AD6A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A048023B-1BEB-4032-A5C9-5338DDD6CF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A048023B-1BEB-4032-A5C9-5338DDD6CF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A048023B-1BEB-4032-A5C9-5338DDD6CF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A048023B-1BEB-4032-A5C9-5338DDD6CF18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
