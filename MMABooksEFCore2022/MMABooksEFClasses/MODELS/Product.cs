@@ -5,13 +5,23 @@ namespace MMABooksEFClasses.MODELS;
 
 public partial class Product
 {
-    public string ProductCode { get; set; } = null!;
+    public int BatchId { get; set; }
 
-    public string Description { get; set; } = null!;
+    public int ProductContainerSizeId { get; set; }
 
-    public decimal UnitPrice { get; set; }
+    public DateTime RackedDate { get; set; }
 
-    public int OnHandQuantity { get; set; }
+    public DateTime SellByDate { get; set; }
 
-    public virtual ICollection<Invoicelineitem> Invoicelineitems { get; set; } = new List<Invoicelineitem>();
+    public int QuantityRacked { get; set; }
+
+    public int QuantityRemaining { get; set; }
+
+    public decimal? IngredientCost { get; set; }
+
+    public decimal? SuggestedPrice { get; set; }
+
+    public virtual Batch Batch { get; set; } = null!;
+
+    public virtual ProductContainerSize ProductContainerSize { get; set; } = null!;
 }
